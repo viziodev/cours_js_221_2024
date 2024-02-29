@@ -1,0 +1,84 @@
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+# 
+#
+#
+# Écrire un algorithme permettant de vérifier que les 26 lettres de l'alphabet
+# sont bien présentes dans le texte. On utilisera un ensemble pour compter toutes
+# les lettres comprises entre 'a' et 'z' présentes dans la chaîne de caractères.
+
+pangramme = """voyez ce koala fou qui mange des journaux et des photos dans un bungalow"""
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+# 
+# Les étudiants passent un questionnaire d'évaluation sur Moodle. Ils obtiennent une note
+# sur 20 et s'ils ne sont pas satisfaits, ils peuvent repasser le test autant de fois
+# qu'ils le désirent. S'ils obtiennent la moyenne lors d'au moins une tentative, alors 
+# ils sont admis.
+# A partir de la liste des tentatives enregistrées par la plate-forme, construire la
+# collection des étudiants admis. Chaque étudiant admis ne doit apparaître qu'une fois.
+# Afficher un message de félicitations pour chaque étudiant admis
+
+L = [
+        ['Pierre', 7],
+        ['Alice', 12],
+        ['Fatou', 8],
+        ['Kévin', 15],
+        ['Pierre', 10],
+        ['Raphaël', 5],
+        ['Kévin', 13],
+        ['Awa', 16],
+        ['Fatou', 7]
+    ]
+
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+# 
+# L'ensemble 'capitales' ci-dessous contient les noms des capitales de l'Europe de 15.
+# L'ensemble 'capitalesDeLaCultiure' contient les noms des villes et capitales européennes
+# qui ont été élues capitale de la culture au cours des années 1985 à 2000 (inclus).
+
+capitales = ["Berlin", "Vienne", "Bruxelles", "Copenhague", "Madrid", "Helsinki", "Paris", "Athènes", "Dublin", "Rome", "Luxembourg", "Amsterdam", "Lisbonne", "Stockholm", "Londres"]
+
+capitalesDeLaCulture = ["Athènes", "Florence", "Amsterdam", "Berlin", "Paris", "Glasgow", "Dublin", "Madrid", "Anvers", "Lisbonne", "Luxembourg", "Copenhague", "Thessalonique", "Stockholm", "Weimar", "Avignon", "Bergen", "Bologne", "Bruxelles", "Helsinki", "Cracovie", "Prague", "Reykjavík", "Saint-Jacques"]
+
+# Combien y-a-t-il eu de capitales de la culture entre 1985 et 2000 ?
+# Réponse attendue : 24
+
+
+# Afficher True/False selon si la ville de Luxembourg est une capitale européenne
+# et a également été capitale de la culture
+# réponse attendue : True
+
+
+# Afficher le nombre de capitales qui contiennent la lettre a (minuscule ou majuscule)
+# Réponse attendue : 5
+
+
+# Afficher l'ensemble des capitales européennes qui n'ont jamais été capitales de la culture
+# Réponse attendue : {'Rome', 'Vienne', 'Londres'}
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+#
+# - Création d'un ensemble à partir d'une collection
+# - Intersection et union d'ensembles
+# Dans cet exercice, on initialise 3 ensembles à partir des 3 listes données ci-dessous.
+# Ensuite, on utilise les opérateurs sur les ensembles pour afficher :
+# * Les objets qui sont à la fois jaunes  et ronds
+# * les objets verts qui ne sont pas ronds
+
+objets_ronds = ['soleil', 'petit pois', 'pizza', 'point', 'pac-man', 'pasteque']
+objets_jaunes = ['post-it', 'soleil', 'pac-man', 'poussin']
+objets_verts = ['petit pois', 'hulk', 'jardin', 'pasteque']
+

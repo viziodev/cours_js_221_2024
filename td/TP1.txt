@@ -1,0 +1,101 @@
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+# 
+commandes=[
+	[0, "monte", 300],
+	[2, "monte", 200],
+	[5, "descend", 100],
+	[10, "monte", 50],
+	[12, "descend", 400],
+	[13, "monte", 60],
+	[18, "descend", 70],
+	[20, "atterrissage"]
+]
+
+# A quelle altitude le drone atterrit ?
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+# 
+# La variable menu ci-dessous représente le menu d'un client du restaurant. 
+# Les plats commandés sont représentés par des nombres correspondants à des 
+# indices dans la carte (0=Aloko, 1=Samoussa, ..., 11=Coca-Cola). Chaque plat
+# à la carte est représenté dans une sous-liste par son nom, son prix et s'il
+# contient de la viande (booléen).
+
+carte= [
+    ['Aloko', 3.5, False],
+    ['Samoussa', 4.5, True],
+    ['Samoussa légumes', 4.5, False],
+    ['Mafe', 7.5, True],
+    ['Thieb', 7.5, True],
+    ['Yassa', 7.5, True],
+    ['Dibi', 12.5, True],
+    ['Saf Sap', 13.5, True],
+    ['Thiakry', 5.5, False],
+    ['Salade de fruit', 3.5, False],
+    ['Jus bissap', 2.5, False],
+    ['Coca-Cola', 1.5, False]
+]
+
+# En utilisant la structure dans la variable carte, calculer le coût de l'addition en euros 
+# Toujours à partir de la carte, identifier si le menu ne contient que des plats végétariens (réponse : False)
+
+menu = [1,1,6,9,10]
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+# 
+# Dans cet exercice, on utilise la possibilité de trier les éléments d'une collection.
+# On désire identifier le premier mot (dans l'ordre lexicographique) qui contient la 
+# lettre 'v' et qui contient au moins 2 fois la lettre 'a'.
+# -> résultat : avalanche
+
+mots = ['continent', 'vacances', 'chewing-gum', 'avalanche', 'histoire', 'binaire']
+
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+# 
+# Pile pour vérifier la parenthésage
+instruction ="e<-sommet(empiler(empiler(dépiler(empiler(pile_vide(),a)),b),c))"
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+# 
+# La liste 'listeAchats' ci-dessous contient des achats d'une entreprise présentés
+# sous la forme de triplets : le libellé, le prix unitaire et la quantité à acheter.
+# La liste est priorisée, cela signifie que l'indice 0 contient l'achat le plus 
+# important et le dernier élément est le moins important. Les achats sont donc réalisés
+# du plus prioritaire au moins prioritaire.
+ 								
+listeAchats = [
+	['imprimante 3D QTX-A4', 2000, 1],
+	['imprimante 3D QT-A5', 1250, 1],
+	['buse 0.4mm iridium', 750, 4],
+	['capot anti-fumée', 1500, 1],
+	['rouleau tungstène 50m', 250, 8],
+	['plateau extrudé 7mm', 990, 1],
+	['buse 0.6mm aluminium', 500, 3],
+	['imprimante 3D QTX-A4+', 3000, 1]
+]
+
+# (Q1) Écrire l'algorithme qui, avec un budget de 10000€, effectue dans l'ordre
+# les achats (tant que c'est possible) et vide la liste des achats. L'algorithme
+# s'arrête lorsqu'il ne reste plus assez de budget pour le prochain achat
+budget = 10000
+	
+# (Q2) Afficher la liste des achats qu'il reste à faire une fois le budget épuisé
+# Réponse attendue : [['plateau extrudé 7mm', 990, 1], ['buse 0.6mm aluminium', 500, 3],
+# ['imprimante 3D QTX-A4+', 3000, 1]]

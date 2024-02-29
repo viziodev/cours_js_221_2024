@@ -1,0 +1,143 @@
+      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+# 
+
+CAN = {
+	"Égypte": [1957, 1986, 1998, 2006, 2008, 2010],
+	"République arabe unie": [1959],
+	"Éthiopie": [1962],
+	"Ghana": [1963, 1965, 1978, 1982],
+	"République démocratique du Congo": [1968],
+	"Soudan": [1970],
+	"Congo": [1972],
+	"Zaïre": [1974],
+	"Maroc": [1976],
+	"Nigeria": [1980, 1994, 2013],
+	"Cameroun": [1984, 1988, 2000, 2002, 2017], 
+	"Algérie": [1990, 2019], 
+	"Côte d'Ivoire": [1992, 2015],
+	"Afrique du Sud": [1996],
+	"Tunisie": [2004],
+	"Zambie": [2012]
+}
+
+
+# Écrire l'algorithme qui imprime à l'écran le pays ayant remporté la 
+# coupe en l'an 2000
+edition = 2000
+
+
+
+# Écrire l'algorithme permettant d'afficher à l'écran le pays ayant remporté
+# la coupe d'Afrique des nations le plus grand nombre de fois 
+
+
+# Écrire l'algorithme permettant d'identifier l'équipe ayant gagné la CAN
+# lors de la dernière édition.
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+#
+# Les composants de 3 types de véhicules sont stockés dans un objet S 
+# qui associe à chaque véhicule (chaîne de caractères) un ensemble (set) de 
+# composants (chaînes de caractères). En utilisant les opérateurs du objet
+# et de l'ensemble, répondez aux questions suivantes :
+
+S = {
+	'bateau': {'bouée','hublot','gouvernail','siège'},
+	'avion': {'phares','siège','hublot','gouvernail','manche'},
+	'voiture': {'pare-chocs','siège','phares'}
+}
+
+# Qu'est-ce qui est présent à la fois dans le bateau, l'avion et la voiture ?
+# Réponse attendue : siège
+
+
+
+
+
+# Qu'est-ce qui est présent dans un bateau, mais ni dans l'avion ni dans la voiture ?
+
+
+
+# Quel véhicule a le plus grand nombre de composants ?
+# Réponse attendue : avion 
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+#
+# A partir de la liste des objets ci-dessous, on fabrique un index,
+# c'est à dire une objet dont les clés sont des caractéristiques
+# et les valeurs des ensembles des objets qui possèdent les caractéristiques
+# correspondantes.
+# A partir de l'index, déterminer les petits objets ronds.
+# Réponse attendue : {'petit pois', 'pac-man', 'point'}
+
+liste = [
+	['soleil', 'grand', 'rond', 'jaune'],
+	['petit pois', 'petit', 'rond', 'vert'],
+	['pizza', 'grand', 'rond', 'rouge'],
+	['point', 'petit', 'rond', 'noir'],
+	['pac-man', 'petit', 'rond', 'jaune'],
+	['pasteque', 'grand', 'rond', 'vert'],
+	['post-it', 'petit', 'carré', 'jaune'],
+	['jardin', 'grand', 'carré', 'vert'],
+]	
+
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+#                                       
+# Observez la structure de données ci-dessous. Elle représente un catalogue
+# de clients, chacun étant représenté par un nom, un prénom, une agence, 
+# ainsi qu'un historique des commandes en cours, validée ou livrées. Chaque
+# commande est ainsi elle-même représentée par un identifiant et un statut
+
+catalogue = [
+	{
+		'nom': "Martin",
+		'prenom': "Valerie",
+		'agence': "Albi",
+		'historique': [
+			{ 'id': 12897, 'statut': "En cours" },
+			{ 'id': 86416, 'statut': "Validee" },
+			{ 'id': 98716, 'statut': "Livrée" }
+		]
+	},
+	{ 
+		'nom': "Ndiaye",
+		'prenom': "Marie",
+		'agence': "Dakar",
+		'historique': [
+			{ 'id': 61573, 'statut': "En cours" },
+			{ 'id': 36475, 'statut': "Livrée" }
+		]
+	},
+	{
+		'nom': "Smith",
+		'prenom': "Peter",
+		'agence': "New-York",
+		'historique': []
+	}
+]
+
+# Écrire l'algorithme qui remplit la liste des noms des clients qui n'ont
+# aucune commande dans leur historique.
+# résultat attendu : 
+# ['Smith']
+
+        
+
+
+# Écrire l'algorithme qui écrit à l'écran toute les commandes dont le 
+# statut est "En cours".
+# Résultat attendu :
+# 12897
+# 61573
+

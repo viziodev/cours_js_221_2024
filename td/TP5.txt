@@ -1,0 +1,112 @@
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+#                                       
+# 
+vols = [
+	['ORY', 'BRS'], ['ORY', 'GVA'], ['ORY', 'TLS'], ['ORY', 'FAO'],
+	['ORY', 'PMO'], ['ORY', 'VCE'], ['ORY', 'BER'], ['BER', 'CPH'],
+	['BER', 'VIE'], ['BER', 'AMS'], ['BER', 'ORY'], ['BER', 'CDG'],
+	['BER', 'MAN'], ['BER', 'NAP'], ['BER', 'GVA'], ['MAD', 'CDG'],
+	['MAD', 'LIS'], ['MAD', 'LGW'], ['MAD', 'GVA'], ['LGW', 'AMS'],
+	['LGW', 'CDG'], ['LGW', 'MAD'], ['LGW', 'GLA'], ['LGW', 'TLS'],
+	['LGW', 'GVA'], ['LGW', 'LUX'], ['LUX', 'LIS'], ['LIS', 'BER'],
+	['GVA', 'ORY'], ['GVA', 'TLS'], ['GVA', 'BER'], ['NAP', 'ORY'],
+	['NAP', 'BRS'], ['NAP', 'GVA']
+]
+
+# Remplir l'objet volsDico de manière à répondre aux question Q1 et Q2
+# le plus efficacement possible
+
+
+
+# Q1 Existe-t-il un vol entre Berlin (BER) et Manchester (MAN) ?
+
+
+# Q2 Afficher les tous les aéroports qui desservent Lisbonne (LIS)
+
+
+# Q3 Quel aéroport dessert le plus grand nombre de villes ?
+
+
+# Q4 : Par combien d'aéroports différents peut-on passer pour 
+# aller de Geneva (GEN) à Bristol (BRS) ? 
+print(volsDico['GVA'] & volsDico['BRS'])
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+#                                       
+#
+#
+pays = [
+	{'nom': 'France', 'langues': ['français'], 'population': 68},
+	{'nom': 'Angleterre', 'langues': ['anglais'], 'population': 56.3},
+	{'nom': 'Sénégal', 'langues': ['wolof', 'français'], 'population': 16.2},
+	{'nom': 'Canada', 'langues': ['anglais', 'français'], 'population': 38.1},
+	{'nom': 'Suisse', 'langues': ['allemand', 'français', 'italien'], 'population': 8.6}
+]
+
+# Q1 : Quels pays parlent plus d'une langue
+
+
+# On utilise un index pour ranger les pays suivant leur population 
+#(big_pop > 50M, ou med_pop) et leur(s) langue(s) parlée(s).
+
+# Q2: Remplir la structure 
+
+		
+# Q2 : Quel(s) pays de population moyenne parle(nt) le français
+
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+#                                       
+#
+# Manipuler une structure arborescente
+
+diag={
+	'message': "Un affichage apparaît-il à l'écran ?",
+	'choixOui': {
+		'message': "Le pointeur est-il affiché à l'écran ?", 
+		'choixOui': {
+			'message': "Le pointeur bouge-t-il lorsqu'on manipule la souris ?",
+			'choixOui': {
+				'message': "le système fonctionne correctement"
+			},
+			'choixNon': {
+				'message': "Il s'agit d'une panne de la souris"
+			}
+		},
+		'choixNon': {
+			'message': "La souris est-elle branchée correctement ?",
+			'choixOui': {
+				'message': "Il s'agit d'une panne de la souris",
+			},
+			'choixNon': {
+				'message': "Brancher la souris"
+			}
+		}
+	},
+	'choixNon': {
+		'message': "Le voyant de marche est-il allumé ?",
+		'choixOui': {
+			'message': "L'appareil est-il en veille ?",
+			'choixOui': {
+				'message': "Sortir l'appareil du mode veille",
+			},
+			'choixNon': {
+				'message': "Il s'agit d'une panne d'affichage"
+			}
+		},
+		'choixNon': {
+			'message': "L'appareil est éteint. Allumer l'appareil"
+		}
+	}
+}
+
+Q1:Afficher le Resultat du Diagnostique

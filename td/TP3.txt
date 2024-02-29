@@ -1,0 +1,202 @@
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+# 
+# Suivre les consignes suivantes :
+# - Créer un nouveau objet appelé 'capitales'
+# - Ajouter les 2 couples (clé/valeur) suivants : (France/France) et (Sénégal/Dakar)
+# - Afficher la capitale du Sénégal
+# - Tester si le objet connaît la capitale de la France
+
+capitales = {}
+capitales['France'] = 'Paris'
+capitales['Sénégal'] = 'Dakar'
+
+
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+# 
+# Le jeu du Scrabble est un jeu de lettres mondialement connu dans lequel 
+# des joueurs s'affrontent en plaçant des mots sur un plateau à partir de
+# lettres. Chaque lettre est associée à un score. Le score d'un mot posé 
+# par un joueur sur le plateau est calculé en faisant la somme des scores
+# des lettres qui composent le mot (il existe des cases spéciales mais nous
+# n'en tiendront pas compte dans le sujet de cet examen).
+
+scores = {
+	'A': 1,		'B': 3,		'C': 3,		'D': 2,		'E': 1,
+	'F': 4,		'G': 2,		'H': 4,		'I': 1,		'J': 8,
+	'K': 10,	'L': 1,		'M': 2,		'N': 1,		'O': 1,
+	'P': 3,		'Q': 8,		'R': 1,		'S': 1,		'T': 1,
+	'U': 1,		'V': 4,		'W': 10,	'X': 10,	'Y': 10,
+	'Z': 10
+}
+
+# Quel est la score de la lettre 'Z'
+# Réponse attendue : 10
+
+# Quel est le score du mot "PYTHON"
+# Réponse attendue : 20
+
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+# 
+# 
+# Créer un nouveau objet contenant les couples suivants : 
+#	('Abou Dabi', 21)
+#	('Washington', -1)
+#	('Reykjavik', 3)
+#	('Ankara', 11)
+#	('Tokyo', 3)
+#	('Moscou', -6)
+# Parcourir le dictionnaire et construire la liste des capitales dont la température
+# aujourd'hui est < 0
+
+
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+# 
+# 
+# Ecrire la fonction 'traduire' qui traduit un texte passé en paramètre 
+# en substituant à chaque mot sa traduction en utilisant le dictionnaire ci-dessous
+# Lorsqu'un mot ne peut pas être traduit, il est conservé en anglais mais entre parenthèses.
+# 
+# Essayer de réécrire la fonction sans utiliser d'instruction 'if'
+
+phrase1="every programmer knows that a word to word translation algorithm can only give poor results"
+phrase2="a better algorithm could improve the results of the translation"
+
+dico={}
+dico["a"]="un"
+dico["algorithm"]="algorithme"
+dico["can"]="peut"
+dico["every"]="chaque"
+dico["give"]="donne"
+dico["knows"]="sait"
+dico["only"]="seulement"
+dico["poor"]="pauvre"
+dico["programmer"]="programmeur"
+dico["results"]="résultats"
+dico["the"]="le"
+dico["that"]="cela"
+dico["translation"]="traduction"
+dico["to"]="vers"
+dico["word"]="mot"
+
+
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+#
+# Suivre les consignes suivantes :
+# - Créer un nouveau objet appelé 'capitales'
+# - Ajouter les 2 couples (clé/valeur) suivants : (France/France) et (Sénégal/Dakar)
+# - Trouver le pays dont la capitale est Dakar
+# - Vérifier si Londres est une capitale (connue du objet)
+# - Quelle est la complexité de recherche dans les valeurs ?
+
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+#
+# Dans cet exercice, on retrouve les pays vainqueurs (au moins un fois) de la 
+# Coupe d'Afrique des Nations, associés à la liste des années où ils ont
+# remporté la coupe.
+# Écrire les algorithmes permettant de répondre aux questions suivantes :
+
+CAN = {
+	"Égypte": [1957, 1986, 1998, 2006, 2008, 2010],
+	"République arabe unie": [1959],
+	"Éthiopie": [1962],
+	"Ghana": [1963, 1965, 1978, 1982],
+	"République démocratique du Congo": [1968],
+	"Soudan": [1970],
+	"Congo": [1972],
+	"Zaïre": [1974],
+	"Maroc": [1976],
+	"Nigeria": [1980, 1994, 2013],
+	"Cameroun": [1984, 1988, 2000, 2002, 2017], 
+	"Algérie": [1990, 2019], 
+	"Côte d'Ivoire": [1992, 2015],
+	"Afrique du Sud": [1996],
+	"Tunisie": [2004],
+	"Zambie": [2012],
+	"Sénégal": [2021]
+}
+
+# Y-a-t-il eu une édition de la CAN en 2000 ?
+# Réponse attendue : True
+
+
+# Quel pays a gagné la CAN en 2021 ?
+
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+#
+# Un objet 'population' ci-dessous associe chaque zone du monde
+# avec des données statistiques : sa population (en milliers d'habitants) 
+# et sa croissance (en %)
+
+population = {
+	"Afrique": {'pop': 1406729, 'croiss': 23.8 },
+	"Amérique latine": {'pop': 665451, 'croiss': 8.5 },
+	"Amérique": {'pop': 373318, 'croiss': 5.9},
+	"Asie": {'pop': 4717155, 'croiss': 7.8},
+	"Europe": {'pop': 747544, 'croiss': -0.4},
+	"Océanie": {'pop': 43755, 'croiss': 12.2}
+}
+
+
+# Combien y-a-t-il de zones dans le découpage du monde selon la structure ?
+# Réponse attendue : 6
+
+
+# Calculer et afficher  la population totale (somme) des pays dont 
+# la croissance est supérieure à 10%
+# Réponse attendue : 1450484
+
+
+# Calculer et afficher la moyenne de croissance dans le monde 
+# (i.e. de toutes les zones)
+# Réponse attendue : 9.63%
+
+
+
+# ___      ___  __   __     __   ___    
+#|__  \_/ |__  |__) /  ` | /  ` |__     
+#|___ / \ |___ |  \ \__, | \__, |___    
+#
+# Inverser le dictionnaire suivant
+# Les valeurs en double seront stockées dans une liste
+tarifs = {
+	'Aloko': 3.5,
+	'Samoussa': 4.5,
+	'Samoussa légumes': 4.5,
+	'Mafe': 7.5,
+	'Thieb': 7.5,
+	'Yassa': 7.5,
+	'Dibi': 12.5,
+	'Saf Sap': 13.5,
+	'Thiakry': 5.5,
+	'Salade de fruit': 3.5,
+	'Jus bissap': 2.5,
+	'Coca-Cola': 1.5
+}
+
